@@ -30,3 +30,5 @@ bq load babynames.names2010 yob2010.txt name:string,gender:string,count:integer
 bq query "SELECT name,count FROM babynames.names2010 WHERE gender = 'F' ORDER BY count DESC LIMIT 5"
 
 bq query "SELECT name,count FROM babynames.names2010 WHERE gender = 'M' ORDER BY count ASC LIMIT 5"
+
+bq rm -r babynames
